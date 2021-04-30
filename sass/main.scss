@@ -1,0 +1,49 @@
+@import './utils/mixin';
+/*Глобальный сброс стилей*/
+@import './base/global';
+
+/*Основные параметры*/
+@import './utils/variables';
+
+/*Шапка сайта*/
+@import './components/header';
+@import './components/logo';
+
+/*Навигация*/
+@import './components/site-nav';
+
+@import './components/contacts-list';
+
+/*Hero*/
+@import './components/hero';
+
+/*Модалка*/
+@import './components/modal';
+
+/*Кнопки*/
+@import './components/button';
+
+/*Особенности*/
+@import './components/feature';
+
+/*Деятельность*/
+@import './components/activity';
+
+/*Команда*/
+@import './components/team';
+
+/*Соцсети*/
+@import './components/icons';
+@import './components/socials';
+
+/*Клиенты*/
+@import './components/clients';
+
+/*Порфтолио*/
+@import './components/portfolio';
+@import './components/overlay';
+
+/*Футер*/
+@import './components/grid';
+@import './components/footer';
+@import './components/signup';

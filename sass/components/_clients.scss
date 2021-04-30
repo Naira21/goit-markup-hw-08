@@ -1,0 +1,52 @@
+.clients-bg {
+  @include background;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients__item {
+  width: 170px;
+  height: 90px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__icon {
+  fill: var(--social-link);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients--link:hover &,
+  .clients--link:focus & {
+    fill: var(--logo-button-color);
+  }
+}
+
+.clients--link {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--social-link);
+  display: flex;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--logo-button-color);
+  }
+}
+
+.title--clients {
+  margin-bottom: 50px;
+}

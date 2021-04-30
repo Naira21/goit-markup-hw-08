@@ -1,0 +1,72 @@
+.contacts-list__mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--link-paragraph-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts-list__link:focus &,
+  .contacts-list__link:hover & {
+    fill: var(--logo-button-color);
+  }
+}
+
+.contacts-list__smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--link-paragraph-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts-list__link:hover &,
+  .contacts-list__link:focus & {
+    fill: var(--logo-button-color);
+  }
+}
+
+.feature-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-link);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .join & {
+    fill: var(--main-bg-text-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--main-bg-text-color);
+  }
+}
+
+.signup__icon {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+
+  display: inline-block;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+}

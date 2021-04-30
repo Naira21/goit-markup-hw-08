@@ -1,0 +1,40 @@
+footer {
+  background-color: var(--second-bg-color);
+  display: block;
+  padding: 60px 0;
+}
+
+address {
+  font-style: normal;
+  color: var(--main-bg-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  flex-basis: calc((100% - 30px) / 2);
+
+  &__link {
+    color: var(--link-footer);
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__adress:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.join {
+  margin-left: 70px;
+
+  &__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-bg-text-color);
+  }
+}
