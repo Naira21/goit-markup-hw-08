@@ -55,11 +55,29 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -121,12 +139,11 @@ link:focus {
 .header-bg {
   background-color: var(--main-bg-text-color);
   border: 1px solid #ececec;
-  display: flex;
 }
 
 .header-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -137,6 +154,8 @@ link:focus {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .logo--header {
@@ -159,16 +178,23 @@ link:focus {
 
 /*Навигация*/
 .site-nav {
-  display: inline-flex;
+  display: flex;
 }
 
 .site-nav:not(last-child) {
   margin-right: 50px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: auto;
 }
 
@@ -209,6 +235,11 @@ link:focus {
   bottom: 0px;
 }
 
+.menu-icons {
+  height: 40px;
+  width: 40px;
+}
+
 .contacts-list {
   display: flex;
   margin-left: auto;
@@ -240,35 +271,44 @@ link:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*Hero*/
-.hero {
-  height: 600px;
-  width: 1600px;
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/about/hero-bg.jpg");
-  background-color: var(--second-bg-color);
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (max-width: 767.98px) {
+  .contacts-list {
+    display: none;
+  }
 }
 
-.hero--content {
-  justify-content: center;
-  text-align: center;
+/*Hero*/
+.hero {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/about/hero-bg.jpg");
+  background-color: var(--second-bg-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: var(--main-bg-text-color);
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
-  height: auto;
+  color: var(--main-bg-text-color);
+  padding-top: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+    padding-top: 200px;
+  }
 }
 
 /*Модалка*/
@@ -420,7 +460,9 @@ label:hover {
 } */
 /*Кнопки*/
 .button {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 73px;
   height: auto;
   font-family: inherit;
@@ -428,6 +470,7 @@ label:hover {
   background-color: var(--logo-button-color);
   border-color: transparent;
   border-radius: 4px;
+  border-width: 0px;
   color: var(--main-bg-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -507,6 +550,17 @@ footer .button--signup {
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--logo-button-color);
+}
+
+.menu-button {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 105;
+  /* width: 40px; */
+  /* height: 40px; */
+  background-color: transparent;
+  border: none;
 }
 
 /*Особенности*/
@@ -712,6 +766,14 @@ footer .button--signup {
   position: absolute;
   top: 29px;
   left: 12px;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: none;
 }
 
 .socials {

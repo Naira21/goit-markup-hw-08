@@ -1,14 +1,20 @@
 .site-nav {
-  display: inline-flex;
+  display: flex;
 
   &:not(last-child) {
     margin-right: 50px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .site-nav {
+    display: none;
   }
 }
 
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: auto;
 }
 
@@ -49,4 +55,9 @@
     position: absolute;
     bottom: 0px;
   }
+}
+
+.menu-icons {
+  height: 40px;
+  width: 40px;
 }

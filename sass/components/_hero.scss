@@ -1,30 +1,64 @@
+// .hero {
+//   height: 600px;
+//   width: 1600px;
+//   display: flex;
+//   width: 100%;
+//   align-items: center;
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url('../images/about/hero-bg.jpg');
+//   background-color: var(--second-bg-color);
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   &--content {
+//     justify-content: center;
+//     text-align: center;
+//   }
+
+//   &__title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     color: var(--main-bg-text-color);
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     margin-bottom: 30px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 696px;
+//     height: auto;
+//   }
+// }
+
+//Новая разметка
 .hero {
-  height: 600px;
-  width: 1600px;
-  display: flex;
-  align-items: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/about/hero-bg.jpg');
   background-color: var(--second-bg-color);
-  margin-right: auto;
-  margin-left: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  // margin-left: auto;
+  // margin-right: auto;
+  height: 400px;
 
-  &--content {
-    justify-content: center;
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
   }
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    color: var(--main-bg-text-color);
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    height: auto;
+    color: var(--main-bg-text-color);
+    padding-top: 118px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+      padding-top: 200px;
+    }
   }
 }
