@@ -18,11 +18,6 @@
       <div class="container header-nav">
         <nav class="nav-list">
           <a href="./index.html" class="logo">Web<span class="logo logo--header logo--black">Studio</span></a>
-          <button class="menu-button" is-open></button>
-          <svg class="menu-icons">
-            <use class="icon-cross" href="./images/icons/icons.svg#icon-close_burger"></use>
-            <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_burger"></use>
-          </svg>
           <ul class="list site-nav">
             <li class="site-nav__item">
               <a href="index.html" class="site-nav__item--current site-nav__link link">Студия</a>
@@ -49,8 +44,44 @@
             >
           </li>
         </ul>
+        <button class="menu-button" is-open>
+          <svg class="menu-icons">
+            <use class="icon-cross" href="./images/icons/icons.svg#icon-close_burger"></use>
+            <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_burger"></use>
+          </svg>       
+        </button>
       </div>
     </header>
+    <div class="mobile-overlay">
+      <div class="mobile-menu">
+      <ul class="menu list">
+        <li class="menu-item">
+          <a href="index.html" class="menu__item--current menu__link link">Студия</a>
+        </li>
+        <li class="menu-item"><a href="portfolio.html" class="menu__link link">Портфолио</a></li>
+        <li class="menu-item"><a href="" class="menu__link link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="menu-contacts list">
+      <li class="menu-contacts__item">
+        <a class="link menu-contacts__link menu-contacts--number" href="tel:+380961111111">
+          +38 096 111 11 11</a>
+      </li>
+      <li class="">
+        <a class="link menu-contacts__link" href="mailto:info@devstudio.com">          
+          info@devstudio.com</a
+        >
+      </li>
+      
+      <ul class="menu-socials list">
+        <li class="socials-text">Instagram</li>
+        <li class="socials-text">Twitter</li>
+        <li class="socials-text">Facebook</li>
+        <li class="socials-text">LinkedIn</li>
+      </ul>
+    </ul>
+  </div>
+    </div>
 
     <!--О студии-->
     <main>
