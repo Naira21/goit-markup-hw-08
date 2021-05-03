@@ -9,7 +9,7 @@
   height: 40px;
   width: 40px;
 }
-@media screen and (min-width: 767.98) {
+@media screen and (min-width: 767.98px) {
   .menu-icons {
     display: none;
   }
@@ -24,6 +24,7 @@
   height: 40px;
   width: 40px;
 }
+
 .icon-cross {
   display: none;
 }
@@ -35,6 +36,7 @@
     display: none;
   }
 }
+
 .mobile-menu {
   background-color: var(--main-bg-text-color);
   position: fixed;
