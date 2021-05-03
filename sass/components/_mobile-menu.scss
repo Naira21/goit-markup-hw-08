@@ -118,7 +118,7 @@
   letter-spacing: 0.02em;
   color: var(--logo-button-color);
 }
-.socials-text::after {
+.socials-text:not(:last-child)::after {
   content: '';
   width: 22px;
   height: 0px;
