@@ -50,9 +50,44 @@
             >
           </li>
         </ul>
+        <button class="menu-button" is-open data-menu-button>
+          <svg class="menu-icons">
+            <use class="icon-cross" href="./images/icons/icons.svg#icon-close_burger"></use>
+            <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
+<div class="mobile-overlay">
+      <div class="mobile-menu" data-menu>
+      <ul class="menu list">
+        <li class="menu-item">
+          <a href="index.html" class="menu__link link">Студия</a>
+        </li>
+        <li class="menu-item"><a href="portfolio.html" class="menu__item--current menu__link link">Портфолио</a></li>
+        <li class="menu-item"><a href="" class="menu__link link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="menu-contacts list">
+      <li class="menu-contacts__item">
+        <a class="link menu-contacts__link menu-contacts--number" href="tel:+380961111111">
+          +38 096 111 11 11</a>
+      </li>
+      <li class="">
+        <a class="link menu-contacts__link" href="mailto:info@devstudio.com">          
+          info@devstudio.com</a
+        >
+      </li>
+      
+      <ul class="menu-socials list">
+        <li class="socials-text">Instagram</li>
+        <li class="socials-text">Twitter</li>
+        <li class="socials-text">Facebook</li>
+        <li class="socials-text">LinkedIn</li>
+      </ul>
+    </ul>
+  </div>
+    </div>
     <!--Порфтолио студии-->
     <main>
       <section class="portfolio-bg section">
@@ -71,8 +106,8 @@
               <button type="button" class="button button--text">Маркетинг</button>
             </li>
           </ul>
-          <ul class="grid list">
-            <li class="grid__item">
+          <ul class="gallery list">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
@@ -94,7 +129,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
@@ -111,7 +146,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/seafood.jpg" alt="Лого ресторана Seafood" width="370" height="294" />
@@ -123,7 +158,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_prime.jpg" alt="Черные наушники" width="370" height="294" />
@@ -135,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_boxes.jpg" alt="Две коробки" width="370" height="294" />
@@ -147,7 +182,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/inspiration_has_no_borders.jpg" alt="Монитор" width="370" height="294" />
@@ -159,7 +194,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img
@@ -176,7 +211,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/project_lab.jpg" alt="Бирка проекта LAB" width="370" height="294" />
@@ -188,7 +223,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid__item">
+            <li class="gallery__item">
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <img src="./images/portfolio/growing_business.jpg" alt="Ноутбук" width="370" height="294" />
@@ -206,8 +241,8 @@
     </main>
     <footer>
       <!--Контакты-->
-      <div class="container footer-container">
-        <div>
+       <div class="container footer-container">
+        <div class="footer-wrap">
           <a href="./index.html" class="logo logo--footer list">Web<span class="logo logo--white">Studio</span></a>
           <address>
             <ul class="list">
@@ -258,7 +293,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container signup">
+          <h2 class="signup__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <form class="signup__form" autocomplete="on" novalidate>
+            <input class="signup__input" type="email" name="email" placeholder="Email" />
+            <button class="button button--signup">
+              Подписаться
+              <svg class="signup__icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -41,6 +41,13 @@
   justify-content: center;
   display: flex;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
 }
 
 .portfolio-filter button:focus,
@@ -52,7 +59,11 @@
 .portfolio-filter__button:not(:last-child) {
   margin-right: 8px;
 }
-
+@media screen and (max-width: 767.98px) {
+  .portfolio-filter__button {
+    margin-bottom: 15px;
+  }
+}
 .portfolio-card__desc {
   position: absolute;
   top: 0;
@@ -72,5 +83,36 @@
 
   .portfolio-card:hover & {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+
+    &__item {
+      flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .gallery__item {
+    --grid__item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    --grid__item: 3;
   }
 }
