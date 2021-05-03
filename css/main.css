@@ -96,7 +96,7 @@ a {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -769,6 +769,12 @@ footer .button--signup {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .feature-list__desc {
   color: var(--link-paragraph-color);
   font-size: 14px;
@@ -1192,6 +1198,12 @@ footer .button--signup {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio-filter {
+    margin-bottom: 30px;
   }
 }
 
