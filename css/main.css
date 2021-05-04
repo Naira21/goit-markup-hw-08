@@ -231,6 +231,7 @@ link:focus {
 
 .is-open .icon-cross {
   display: block;
+  position: fixed;
 }
 
 .is-open .icon-menu {
@@ -452,16 +453,39 @@ link:focus {
 
 /*Hero*/
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/about/hero-bg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.mobile.jpg");
   background-color: var(--second-bg-color);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.tablet@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.desktop@2x.jpg");
   }
 }
 
@@ -472,14 +496,28 @@ link:focus {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-bg-text-color);
-  padding-top: 118px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 60px;
-    padding-top: 200px;
+  }
+}
+
+.container.hero--content {
+  padding: 118px 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container.hero--content {
+    padding: 118px 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.hero--content {
+    padding: 200px 52px;
   }
 }
 
