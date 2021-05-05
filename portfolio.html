@@ -50,7 +50,7 @@
             >
           </li>
         </ul>
-        <button class="menu-button" is-open data-menu-button>
+        <button class="menu-button is-open" data-menu-button>
           <svg class="menu-icons">
             <use class="icon-cross" href="./images/icons/icons.svg#icon-close_burger"></use>
             <use class="icon-menu" href="./images/icons/icons.svg#icon-menu_burger"></use>
@@ -58,8 +58,8 @@
         </button>
       </div>
     </header>
-<div class="mobile-overlay">
-      <div class="mobile-menu" data-menu>
+
+    <div class="mobile-menu is-open" data-menu>
       <ul class="menu list">
         <li class="menu-item">
           <a href="index.html" class="menu__link link">Студия</a>
@@ -67,27 +67,24 @@
         <li class="menu-item"><a href="portfolio.html" class="menu__item--current menu__link link">Портфолио</a></li>
         <li class="menu-item"><a href="" class="menu__link link">Контакты</a></li>
       </ul>
-    </nav>
-    <ul class="menu-contacts list">
-      <li class="menu-contacts__item">
-        <a class="link menu-contacts__link menu-contacts--number" href="tel:+380961111111">
-          +38 096 111 11 11</a>
-      </li>
-      <li class="">
-        <a class="link menu-contacts__link" href="mailto:info@devstudio.com">          
-          info@devstudio.com</a
-        >
-      </li>
-      
+
+      <ul class="menu-contacts list">
+        <li class="menu-contacts__item">
+          <a class="link menu-contacts__link menu-contacts--number" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li class="">
+          <a class="link menu-contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        </li>
+      </ul>
+
       <ul class="menu-socials list">
         <li class="socials-text">Instagram</li>
         <li class="socials-text">Twitter</li>
         <li class="socials-text">Facebook</li>
         <li class="socials-text">LinkedIn</li>
       </ul>
-    </ul>
-  </div>
     </div>
+
     <!--Порфтолио студии-->
     <main>
       <section class="portfolio-bg section">
@@ -111,11 +108,33 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink1desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink1desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink1tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink1tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink1mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink1desktop.jpg" alt="Портфолио сайта Технокряк" width="450"/>
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink1desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink1desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink1tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink1tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink1mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink1mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfoliolink1desktop.jpg"
+                      alt="Портфолио сайта Технокряк"
+                      width="450"
+                    />
+                  </picture>
                   <div class="overlay__text">
                     <p class="portfolio-card__desc">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -123,7 +142,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-card__info portfolio-card--first ">
+                <div class="portfolio-card__info portfolio-card--first">
                   <h2 class="portfolio-card__title">Технокряк</h2>
                   <p class="portfolio-card__type" lang="en">Веб-сайт</p>
                 </div>
@@ -133,12 +152,34 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink2desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink2tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink2mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x">
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink2desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink2desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink2tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink2tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink2mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink2mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
 
-                    <img src="./images/portfolio/desktop/portfoliolink2desktop.jpg" alt="Два баскетболиста во время игры" width="450"/>
-                  </picture>                  
+                    <img
+                      src="./images/portfolio/desktop/portfoliolink2desktop.jpg"
+                      alt="Два баскетболиста во время игры"
+                      width="450"
+                    />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -151,11 +192,33 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink3desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink3tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink3mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink3desktop.jpg" alt="Лого ресторана Seafood" width="450"/>
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink3desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink3desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink3tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink3tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink3mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink3mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfoliolink3desktop.jpg"
+                      alt="Лого ресторана Seafood"
+                      width="450"
+                    />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -168,11 +231,29 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink4desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink4tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink4mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink4desktop.jpg" alt="Черные наушники" width="450"/>
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink4desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink4desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink4tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink4tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink4mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink4mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/portfolio/desktop/portfoliolink4desktop.jpg" alt="Черные наушники" width="450" />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -185,11 +266,29 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink5desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink5tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink5mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink5desktop" alt="Две коробки" width="450"/>
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink5desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink5desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink5tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink5tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink5mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink5mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/portfolio/desktop/portfoliolink5desktop" alt="Две коробки" width="450" />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -202,13 +301,29 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink6desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tabletportfoliolink6tablet.jpg 1x, ./images/portfolio/tabletportfoliolink6tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink6mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink6desktop.jpg" alt="Монитор" width="450"/>
-
-
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink6desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink6desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tabletportfoliolink6tablet.jpg    1x,
+                        ./images/portfolio/tabletportfoliolink6tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink6mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink6mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/portfolio/desktop/portfoliolink6desktop.jpg" alt="Монитор" width="450" />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -221,11 +336,33 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink7desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink7tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink7mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink7desktop.jpg" alt="Раскрытая книга изданя Limited Edition" width="450"/>
-                  </picture>                  
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink7desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink7desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink7tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink7tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink7mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink7mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfoliolink7desktop.jpg"
+                      alt="Раскрытая книга изданя Limited Edition"
+                      width="450"
+                    />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -238,12 +375,34 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink8desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink8tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink8mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink8desktop.jpg" alt="Бирка проекта LAB" width="450"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink8desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink8desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink8tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink8tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink8mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink8mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/portfoliolink8desktop.jpg"
+                      alt="Бирка проекта LAB"
+                      width="450"
+                    />
                   </picture>
-                  
+
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -256,11 +415,29 @@
               <a href="" class="portfolio-card">
                 <div class="overlay">
                   <picture>
-                    <source srcset="./images/portfolio/desktop/portfoliolink9desktop.jpg 1x, ./images/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x">
-                    <source srcset="./images/portfolio/tablet/portfoliolink9tablet.jpg 1x, ./images/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x">
-                    <source srcset="./images/portfolio/mobile/portfoliolink9mobile.jpg 1x, ./images/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x">
-                    <img src="./images/portfolio/desktop/portfoliolink9desktop.jpg" alt="Ноутбук" width="450"/>
-                  </picture>             
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfoliolink9desktop.jpg    1x,
+                        ./images/portfolio/desktop/portfoliolink9desktop@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfoliolink9tablet.jpg    1x,
+                        ./images/portfolio/tablet/portfoliolink9tablet@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfoliolink9mobile.jpg    1x,
+                        ./images/portfolio/mobile/portfoliolink9mobile@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/portfolio/desktop/portfoliolink9desktop.jpg" alt="Ноутбук" width="450" />
+                  </picture>
                   <div class="overlay__text"><p class="portfolio-card__desc"></p></div>
                 </div>
                 <div class="portfolio-card__info">
@@ -275,7 +452,7 @@
     </main>
     <footer>
       <!--Контакты-->
-       <div class="container footer-container">
+      <div class="container footer-container">
         <div class="footer-wrap">
           <a href="./index.html" class="logo logo--footer list">Web<span class="logo logo--white">Studio</span></a>
           <address>

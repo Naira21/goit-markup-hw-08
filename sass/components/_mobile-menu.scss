@@ -55,17 +55,8 @@
 }
 
 .menu {
-  padding: 48px 221px 306px 40px;
+  margin: 48px 221px 306px 40px;
 }
-
-// .mobile-overlay {
-//   background-color: var(--main-bg-text-color);
-//   position: fixed;
-//   top: 0;
-//   right: 0px;
-//   width: 100%;
-//   height: 100vh;
-// }
 
 .menu-item:not(:last-child) {
   margin-bottom: 32px;
@@ -84,7 +75,7 @@
 }
 
 .menu-contacts {
-  padding: 0 140px 64px 40px;
+  margin: 0 140px 64px 40px;
 }
 
 .menu-contacts__link {
@@ -109,7 +100,7 @@
 
 .menu-socials {
   display: flex;
-  padding-top: 64px;
+  margin: 0px 83px 48px 40px;
 }
 
 .socials-text {
