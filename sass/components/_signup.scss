@@ -1,8 +1,9 @@
 .signup {
-  display: inline-block;
+  display: block;
   margin-left: 93px;
-  width: 358px;
+
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 1199.98px) {
     margin-left: 0px;
@@ -22,7 +23,7 @@
 
   display: inline;
   align-items: center;
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   padding: 15px;
@@ -37,6 +38,9 @@
   @media screen and (max-width: 1199.98px) {
     margin-right: 0px;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
