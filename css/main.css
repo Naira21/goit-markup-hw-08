@@ -619,6 +619,7 @@ link:focus {
 @media screen and (max-width: 478.98px) {
   .modal {
     width: 98%;
+    height: 100vh;
   }
 }
 
