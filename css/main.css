@@ -201,8 +201,10 @@ link:focus {
 .menu-button {
   padding: 0;
   margin: 0;
-  position: relative;
-  z-index: 125;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 25;
   background-color: transparent;
   border: none;
   height: 40px;
@@ -246,8 +248,8 @@ link:focus {
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  z-index: 100;
-  overflow: auto;
+  z-index: 10;
+  padding: 48px 40px;
   transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -255,12 +257,20 @@ link:focus {
   right: 0px;
 }
 
-.menu {
-  margin: 48px 221px 306px 40px;
+@media screen and (min-width: 480px) {
+  .menu {
+    margin: 0px 0px 306px 0px;
+  }
 }
 
 .menu-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 479.98px) {
+  .menu-item:not(:last-child) {
+    margin-bottom: 26px;
+  }
 }
 
 .menu__link {
@@ -271,12 +281,25 @@ link:focus {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 478.98px) {
+  .menu__link {
+    font-size: 30px;
+    line-height: 1.18;
+  }
+}
+
 .menu__item--current {
   color: var(--logo-button-color);
 }
 
 .menu-contacts {
-  margin: 0 140px 64px 40px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 479.98px) {
+  .menu-contacts {
+    margin: 100px 0px 64px 0px;
+  }
 }
 
 .menu-contacts__link {
@@ -290,8 +313,11 @@ link:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-contacts__link:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 478.98px) {
+  .menu-contacts__link {
+    font-size: 20px;
+    line-height: 1.17;
+  }
 }
 
 .menu-contacts--number {
@@ -300,9 +326,21 @@ link:focus {
   color: var(--logo-button-color);
 }
 
+@media screen and (max-width: 478.98px) {
+  .menu-contacts--number {
+    font-size: 26px;
+    line-height: 1.18;
+  }
+}
+
 .menu-socials {
   display: flex;
-  margin: 0px 83px 48px 40px;
+}
+
+@media screen and (max-width: 479.98px) {
+  .menu-socials {
+    flex-wrap: wrap;
+  }
 }
 
 .socials-text {
@@ -536,7 +574,7 @@ link:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 120;
+  z-index: 50;
   background-color: var(--modal-bg);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -549,6 +587,12 @@ link:focus {
 
 .modal__content {
   padding: 40px;
+}
+
+@media screen and (max-width: 478.98px) {
+  .modal__content {
+    padding: 40px 20px;
+  }
 }
 
 .modal {
@@ -569,6 +613,12 @@ link:focus {
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (max-width: 478.98px) {
+  .modal {
+    width: 98%;
   }
 }
 
@@ -681,10 +731,23 @@ textarea {
   }
 }
 
+@media screen and (max-width: 478.98px) {
+  .form__agreement {
+    font-size: 10px;
+    line-height: 1.17;
+  }
+}
+
 .form__condition {
   color: var(--logo-button-color);
   text-decoration: underline;
   outline: none;
+}
+
+@media screen and (max-width: 478.98px) {
+  .form__condition {
+    display: contents;
+  }
 }
 
 label:focus,
@@ -768,6 +831,15 @@ footer .button--signup {
   line-height: 30px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 478.98px) {
+  .button--send {
+    font-size: 12px;
+    line-height: 1.9;
+    width: 50%;
+    height: 30px;
+  }
 }
 
 .button.button--send {
