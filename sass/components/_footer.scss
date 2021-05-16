@@ -40,6 +40,11 @@ address {
   }
 }
 
+.footer-container__link:hover,
+.footer-container__link:focus {
+  color: var(--logo-button-color);
+}
+
 .join {
   margin-left: 70px;
   @media screen and (max-width: 1199.98px) {
